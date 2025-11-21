@@ -1,0 +1,37 @@
+@import url('styles.css');
+
+.noticia-main {
+    .heading-noticia {
+        margin-bottom: 5rem;
+    }
+
+    .content-noticia {
+        margin-bottom: 5rem;
+
+        .info-back {
+            height: max-content;
+            /* position: sticky;
+            top: 0; */
+
+            .content-back {
+                height: max-content;
+                background-color: var(--color-beige);
+                padding: 40px;
+
+                .text-cursive {
+                    font-style: italic;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (width < 768px) {
+    .proyectos-relacionados {
+        img {
+            margin-top: 1.7rem;
+        }
+    }
+}
