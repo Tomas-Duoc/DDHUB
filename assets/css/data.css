@@ -1,0 +1,101 @@
+@import url('styles.css');
+
+header {
+    .header-hero {
+        background-image: url(../img/background-observatorio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .content-hero {
+            background-color: var(--color-negro-ddhub);
+            padding: 40px;
+
+            h3,
+            p {
+                text-align: center;
+                color: var(--color-primary-light);
+            }
+
+            .link-hero {
+                color: var(--color-primary-light);
+                border: var(--button-border) var(--color-primary-light);
+            }
+        }
+    }
+}
+
+.observatorio-main {
+    padding-bottom: 0;
+    .bento-grid {
+        column-count: 2;
+        padding-bottom: 3rem;
+
+        .data-article {
+            break-inside: avoid;
+
+            .box-img {
+                height: 30vh;
+                width: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            h4 {
+                margin-top: 3rem;
+            }
+
+            .data-tags {
+                position: relative;
+                margin: 3rem 0;
+                padding-bottom: 3rem;
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    background-color: var(--color-secondary-dark);
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        .relleno {
+            margin: 3rem 0;
+
+            .relleno-light {
+                background-color: var(--color-verde-ddhub);
+                height: 30vh;
+            }
+
+            .relleno-dark {
+                background-color: var(--color-secondary-dark);
+                height: 30vh;
+            }
+        }
+    }
+
+    .data-text{
+        background-color: var(--color-verde-ddhub);
+
+        p{
+            font-family: var(--fonts-heading);
+            font-size: var(--size-h2);
+            padding: 4rem 30rem;
+        }
+    }
+}
+
+@media (width < 768px) {
+    .observatorio-main {
+        .bento-grid {
+            column-count: 1;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import url('styles.css');
+
+header {
+    .header-hero {
+        background-image: url(../img/background-observatorio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .content-hero {
+            background-color: var(--color-negro-ddhub);
+            padding: 40px;
+
+            h3,
+            p {
+                text-align: center;
+                color: var(--color-primary-light);
+            }
+
+            .link-hero {
+                color: var(--color-primary-light);
+                border: var(--button-border) var(--color-primary-light);
+            }
+        }
+    }
+}
+
+.observatorio-main {
+    .radar-articulo {
+        .text-bold {
+            font-weight: 700;
+        }
+    }
+
+    .link-articulo {
+        color: var(--color-secondary-dark);
+        border: var(--button-border) var(--color-secondary-dark);
+    }
+}
+
+@media (width < 768px) {
+    main {
+        .radar-articulo {
+            h2 {
+                padding-top: 1rem;
+            }
+        }
+    }
+}

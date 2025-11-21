@@ -1,0 +1,112 @@
+@import url('styles.css');
+
+header {
+    .header-hero {
+        background-image: url(../img/background-observatorio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .content-hero {
+            background-color: var(--color-negro-ddhub);
+            padding: 40px;
+
+            h3,
+            p {
+                text-align: center;
+                color: var(--color-primary-light);
+            }
+
+            .link-hero {
+                color: var(--color-primary-light);
+                border: var(--button-border) var(--color-primary-light);
+            }
+        }
+    }
+}
+
+.observatorio-main {
+    .content-articulo {
+        .info-back {
+            height: max-content;
+            /* position: sticky;
+            top: 0; */
+
+            .content-back {
+                height: max-content;
+                border: solid 2px var(--color-secondary-dark);
+                padding: 40px;
+
+                .text-back {
+                    font-family: var(--fonts-paragraph);
+                }
+
+                .list-back {
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+        }
+
+        .descargar {
+            color: var(--color-secondary-dark);
+            border: var(--button-border) var(--color-secondary-dark);
+        }
+    }
+
+    .content-autor {
+        background-color: var(--color-negro-ddhub);
+        margin: 5rem 0;
+
+        .img-autor {
+            overflow: hidden;
+            height: 45vh;
+            clip-path: ellipse(88% 85% at 1% 50%);
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -310px;
+            }
+        }
+
+        .info-autor {
+            color: var(--color-primary-light);
+        }
+    }
+}
+
+@media (width < 992px) {
+    .observatorio-main {
+        .content-articulo {
+            .info {
+                padding-top: 1.5rem;
+            }
+        }
+
+        .content-autor {
+            .img-autor {
+                overflow: hidden;
+                clip-path: none;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
+
+            .info-autor {
+                padding: 1.5rem;
+            }
+        }
+
+        /* .articulos-relacionados {
+            .articulos {
+                figcaption {
+                    padding: 20px 0;
+                }
+            }
+        } */
+    }
+}

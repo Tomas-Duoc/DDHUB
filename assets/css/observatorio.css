@@ -1,0 +1,303 @@
+@import url('styles.css');
+
+header {
+    .header-hero {
+        background-image: url(../img/background-observatorio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .content-hero-portada {
+            .text-hero {
+                font-weight: 700;
+            }
+        }
+
+        .portada-images {
+            position: relative;
+
+
+            .img-small {
+                position: absolute;
+                width: 35%;
+                bottom: -100px;
+                right: 49%;
+            }
+
+            .img-big {
+                position: absolute;
+                width: 56%;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 53px;
+            }
+        }
+    }
+}
+
+.observatorio-portada-main {
+    .portada-radar {
+        background-color: var(--color-negro-ddhub);
+        position: relative;
+        padding: 6rem 0;
+        color: var(--color-primary-light);
+
+        h2 {
+            width: max-content;
+            color: var(--color-primary-dark);
+            background-color: var(--color-verde-ddhub);
+            padding: 0.6rem 8rem;
+            position: absolute;
+            top: 50px;
+        }
+
+        .radar-img {
+            height: 30rem;
+            margin-bottom: 3rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .text-left_radar {
+            margin-bottom: 3rem;
+        }
+
+        .link-radar_portada {
+            color: var(--color-primary-light);
+            border: var(--button-border) var(--color-primary-light);
+        }
+
+        .portada-radar_noticia {
+            .radar-article_img {
+                height: 12.5rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .content-autor-observatorio {
+        background-color: var(--color-verde-ddhub);
+        gap: 5rem;
+
+        .img-autor {
+            overflow: hidden;
+            height: 50vh;
+            clip-path: ellipse(84% 85% at 95% 50%);
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -310px;
+                right: 0;
+            }
+        }
+
+        .info-autor {
+            color: var(--color-primary-dark);
+
+            .button-autor {
+                color: var(--color-primary-dark);
+                border: var(--button-border) var(--color-primary-dark);
+            }
+        }
+    }
+
+    .portada-zoom {
+        padding: 10rem 0 8rem;
+
+        h2 {
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            margin: 0 2rem;
+            position: absolute;
+            left: 0;
+            top: 57px;
+
+            &::before {
+                content: "";
+                height: 150%;
+                width: 15px;
+                background-color: var(--color-secondary-dark);
+                left: 0;
+                position: absolute;
+            }
+        }
+
+        .img-zoom {
+            width: 100%;
+            height: 60vh;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card-zoom {
+            .art-link {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                i {
+                    transition: all .3s ease;
+                }
+
+                &:hover {
+                    i {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-banner {
+        background-color: var(--color-negro-ddhub);
+        gap: 10rem;
+
+        .img-banner {
+            overflow: hidden;
+            height: 60vh;
+            clip-path: ellipse(88% 85% at 1% 50%);
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -310px;
+            }
+        }
+
+        .info-banner {
+            color: var(--color-primary-light);
+
+            .button-banner {
+                color: var(--color-primary-light);
+                border: var(--button-border) var(--color-primary-light);
+            }
+        }
+    }
+
+    .observatorio-text {
+        padding: 5rem 0;
+        background-image: url(../img/back-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .content-text {
+            background-color: var(--color-verde-ddhub);
+            color: var(--color-secondary-dark);
+            padding: 3rem;
+            gap: 1rem;
+
+            h2,
+            p {
+                text-align: center;
+                width: 65%;
+            }
+
+
+            .button-text {
+                border: var(--button-border) var(--color-secondary-dark);
+                color: var(--color-secondary-dark);
+            }
+        }
+    }
+}
+
+@media (width < 992px) {
+    .observatorio-portada-main {
+        .portada-images {
+            display: none;
+        }
+
+        .portada-radar {
+
+            .portada-radar_noticia {
+                margin-top: 3rem;
+            }
+
+            h2 {
+                padding: 0.6rem 5rem;
+            }
+        }
+
+        .content-autor-observatorio {
+            gap: 0;
+            .img-autor {
+                overflow: hidden;
+                clip-path: none;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
+
+            .info-autor {
+                padding: 2rem;
+            }
+        }
+
+        .content-banner {
+            gap: 0;
+            .img-banner {
+                overflow: hidden;
+                clip-path: none;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
+
+            .info-banner {
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+@media (width < 768px) {
+    .observatorio-portada-main {
+        .portada-radar {
+            h2 {
+                padding: 0.6rem 2rem;
+            }
+        }
+
+        .observatorio-text {
+            .content-text {
+                margin: 0 1.5rem;
+            }
+        }
+    }
+}
+
+@media (width < 576px) {
+    .observatorio-portada-main {
+        .observatorio-text {
+            .content-text {
+
+                h2,
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
