@@ -212,7 +212,11 @@
     }
 
     .logo-primary {
-      width: 74%;
+      width: 40% !important;
+      padding: 0.5rem 0;
+    }
+    .logo-scroll {
+      width: 60%;
       padding: 0.5rem 0;
     }
   }

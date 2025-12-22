@@ -52,7 +52,7 @@ function NavScrollAndResize() {
       navPrimary.style.backgroundColor = "#000";
       if (logo) {
         logo.classList.add("logo-primary");
-         logo.src = "assets/img/logo-duoc.svg"; 
+         logo.src = "assets/img/logo-duoc-light.webp"; 
         if (logo.parentElement) logo.parentElement.style.margin = "0 0 0 1rem";
       }
     } else {
@@ -60,7 +60,7 @@ function NavScrollAndResize() {
       navPrimary.style.backgroundColor = "transparent";
       if (logo) {
         logo.classList.remove("logo-primary");
-        logo.src = "assets/img/logo-duoc.png"; 
+        logo.src = "assets/img/logo-duoc-light.webp"; 
         if (logo.parentElement)
           logo.parentElement.style.margin = "0 3.5rem 0 1rem";
       }

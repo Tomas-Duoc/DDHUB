@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Single - Proyectos</title>
+    <title>DDHUB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/single-proyectos.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/layout.css">
 </head>
 
@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-xl p-0">
             <div class="navbar-brand-container">
                 <a href="https://www.duoc.cl/" target="_blank" class="logo-nav-mobile">
-                    <img src="assets/img/logo-duoc.svg" alt="Logo DuocUC" class="img-fluid">
+                    <img src="assets/img/logo-duoc.png" alt="Logo DuocUC" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
                     aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +98,7 @@
                     </div>
                     <div class="nav-primary d-flex w-100">
                         <a href="https://www.duoc.cl/" target="_blank" class="logo-nav">
-                            <img src="assets/img/logo-duoc.png" alt="Logo DuocUC" class="img-fluid logo-scroll">
+                            <img src="assets/img/logo-duoc-light.webp" alt="Logo DuocUC" class="img-fluid logo-scroll">
                         </a>
                         <ul class="navbar-nav mb-2 mb-lg-0">
 
@@ -352,13 +352,29 @@
                 </div>
             </nav>
         </nav>
+
+        <section class="hero vh-100">
+            <video src="assets/videos/video-ddhub.mp4" autoplay loop muted></video>
+            <div class="container h-100 mb-5">
+                <div class="row align-items-center h-100 row-hero">
+                    <div class="col-6">
+                        <img src="assets/img/logo-ddhub.png" alt="Logo DDHUB" class="logo-ddhub">
+                        <h1>Somos un espacio para la innovación y el aprendizaje activo guiado por el Diseño.</h1>
+                        <div class="buttons-hero d-flex gap-3 mt-5">
+                            <a href="#" class="button-ddhub button-fill">Ver Proyectos</a>
+                            <a href="#" class="button-ddhub button-border">Conoce más del DDHUB</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
-    <main id="padding-main" class="container proyecto-main">
+    <main id="padding-main" class="proyecto-main">
 
         <!-- NAV PARA GIT-PAGES -->
         <nav class="d-flex justify-content-center gap-3 py-4">
-            <a class="text-decoration-none text-dark" href="index.html">Proyecto</a>
+            <a class="text-decoration-none text-dark" href="single-proyecto.html">Proyecto</a>
             <a class="text-decoration-none text-dark" href="single-noticia.html">Noticia</a>
             <a class="text-decoration-none text-dark" href="single-articulo.html">Articulo</a>
             <a class="text-decoration-none text-dark" href="pagina-observatorio.html">Observatorio de Tendencias</a>
@@ -366,90 +382,69 @@
             <a class="text-decoration-none text-dark" href="pagina-data.html">Data</a>
         </nav>
 
-        <div class="row justify-content-center gap-5 heading-proyecto">
-            <p class="category">Aplica Diseño</p>
-            <h1 class="text-center m-0">Nombre del Proyecto</h1>
-            <div class="d-flex justify-content-center">
-                <p>Año 2025</p>
-                <ul>
-                    <li class="sede">Sede Viña del Mar</li>
-                </ul>
+        <!-- <section class="container noticias-destacadas">
+            <div class="row mb-5">
+                <div class="col"><h2>Noticias Destacadas</h2></div>
             </div>
-        </div>
-
-        <section class="row content-proyecto gap-4">
-            <div class="col-12">
-                <nav class="breadcrumbs"><a href="#">Inicio</a> > <a href="#">Aplica Diseño</a> > <a href="#">Nombre del
-                        Proyecto</a></nav>
-            </div>
-            <div class="col-12 img-proyect">
-                <img src="assets/img/proyecto.jpg" alt="Proyecto">
-            </div>
-            <h2 class="m-0 title-proyecto">Detalle del Proyecto</h2>
-            <div class="row m-0">
-                <div class="col-12 col-lg-4 info info-left ps-0">
-                    <div class="info-content content-left">
-                        <h4>Estudiantes</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <h4>Docentes</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et</p>
-                        <h4>Carreras Involucradas</h4>
-                        <p>Diseño Industrial</p>
-                        <h4>Asignaturas</h4>
-                        <p>Diseño Industrial</p>
-                    </div>
+            <div class="row home-noticia-destacada mb-5">
+                <div class="col-12 col-md-6 img-destacada">
+                    <img src="assets/img/articulo-relacionado.png" alt="Noticia Destacada">
                 </div>
-                <div class="col-12 col-lg-8 info info-right pe-0">
-                    <div class="info-content content-top">
-                        <h4>Descripción</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <h4>Evidencias</h4>
-                        <p>Descripcion evidencia</p>
-                        <h4>Empresa</h4>
-                        <p>Descripcion evidencia</p>
-                        <h4>Información complementaria</h4>
-                        <p>Descripcion evidencia</p>
-                    </div>
-                    <div class="info-content content-bottom">
-                        <h4>Información complementaria</h4>
-                        <p>Sitio web: www.sitio.cl</p>
-                        <p>Iconos de redes sociales</p>
-                    </div>
+                <div class="col-12 col-md-6 text-destacada">
+                    <p class="text-uppercase">PUBLICADO EL 10 DE OCTUBRE</p>
+                    <h3 class="mb-3">Revista de Tendencias lanza nueva propuesta de investigación para docentes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <a href="#" class="button-ddhub mt-4">Ver Noticia <i
+                        class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
-        </section>
-
-        <section class="row proyectos-relacionados card-relacionados">
-            <h3 class="my-5">Noticias Relacionadas</h3>
-            <figure class="col-12 col-md-4 proyecto card-ddhub">
-                <img src="assets/img/proyecto.jpg" alt="Proyecto" class="img-fluid">
-                <figcaption>
-                    <a href="#" class="relacionado-link"><h4>Optimización Digital de Residuos Textiles y Producción de Moda Cero Residuos</h4></a>
-                </figcaption>
-            </figure>
-            <figure class="col-12 col-md-4 proyecto card-ddhub">
-                <img src="assets/img/proyecto.jpg" alt="Proyecto" class="img-fluid">
-                <figcaption>
-                    <a href="#" class="relacionado-link"><h4>Proyecto Valoriza</h4></a>
-                </figcaption>
-            </figure>
-            <figure class="col-12 col-md-4 proyecto card-ddhub">
-                <img src="assets/img/proyecto.jpg" alt="Proyecto" class="img-fluid">
-                <figcaption>
-                    <a href="#" class="relacionado-link"><h4>Optimización Digital de Residuos Textiles y Producción de Moda Cero Residuos</h4></a>
-                </figcaption>
-            </figure>
-        </section>
+            <div class="row home-noticias">
+                <article class="col-12 col-md-6 d-flex align-items-center gap-5">
+                    <div class="box-img">
+                        <img src="assets/img/articulo-relacionado.png" alt="Noticia">
+                    </div>
+                    <div class="box-text">
+                        <p class="text-uppercase">PUBLICADO EL 10 DE OCTUBRE</p>
+                        <h4>Subtítulos y textos grandes</h4>
+                        <a href="#" class="button-ddhub mt-4">Ver Noticia <i
+                            class="bi bi-chevron-right"></i></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 d-flex align-items-center gap-5">
+                    <div class="box-img">
+                        <img src="assets/img/articulo-relacionado.png" alt="Noticia">
+                    </div>
+                    <div class="box-text">
+                        <p class="text-uppercase">PUBLICADO EL 10 DE OCTUBRE</p>
+                        <h4>Subtítulos y textos grandes</h4>
+                        <a href="#" class="button-ddhub mt-4">Ver Noticia <i
+                            class="bi bi-chevron-right"></i></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 d-flex align-items-center gap-5">
+                    <div class="box-img">
+                        <img src="assets/img/articulo-relacionado.png" alt="Noticia">
+                    </div>
+                    <div class="box-text">
+                        <p class="text-uppercase">PUBLICADO EL 10 DE OCTUBRE</p>
+                        <h4>Subtítulos y textos grandes</h4>
+                        <a href="#" class="button-ddhub mt-4">Ver Noticia <i
+                            class="bi bi-chevron-right"></i></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 d-flex align-items-center gap-5">
+                    <div class="box-img">
+                        <img src="assets/img/articulo-relacionado.png" alt="Noticia">
+                    </div>
+                    <div class="box-text">
+                        <p class="text-uppercase">PUBLICADO EL 10 DE OCTUBRE</p>
+                        <h4>Subtítulos y textos grandes</h4>
+                        <a href="#" class="button-ddhub mt-4">Ver Noticia <i
+                            class="bi bi-chevron-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section> -->
 
     </main>
 
@@ -622,7 +617,7 @@
         <div class="container-fluid contain-img-footer">
             <div class="row justify-content-between">
                 <div class="col">
-                    <img src="assets/img/logo-duoc.svg" class="img-footer-1" alt="Duoc UC">
+                    <img src="assets/img/logo-duoc.png" class="img-footer-1" alt="Duoc UC">
                 </div>
                 <div class="col d-flex justify-content-end">
                     <img src="assets/img/acreditacion.webp" class="img-footer-2" alt="7 Años acreditado">
@@ -634,7 +629,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="assets/js/singles.js"></script>
     <script src="assets/js/layout.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
 </body>
