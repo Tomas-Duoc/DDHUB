@@ -20,6 +20,10 @@
     h1 {
       font-size: var(--size-h1);
       color: var(--color-primary-light);
+
+      @media (width < 576px) {
+        font-size: var(--size-h2);
+      }
     }
 
     .button-ddhub {
@@ -38,10 +42,141 @@
 }
 
 main {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  .proyectos-home {
+    background-color: #ebe6d6;
+    padding: 5rem 0;
 
-  .noticias-destacadas {
+    p {
+      width: 75%;
+
+      @media (width < 992px) {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+
+      @media (width < 992px) {
+        height: 30vh;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--color-primary-dark);
+      font-size: var(--size-h3);
+      font-family: var(--fonts-heading);
+    }
+  }
+
+  .content-autor-home {
+    background-color: #101820;
+    gap: 5rem;
+
+    .img-autor {
+      overflow: hidden;
+      height: 60vh;
+      clip-path: ellipse(84% 85% at 95% 50%);
+      position: relative;
+
+      img {
+        position: absolute;
+        top: -310px;
+        right: 0;
+      }
+    }
+
+    .info-autor {
+      color: var(--color-primary-light);
+
+      .button-autor {
+        background-color: var(--color-verde-ddhub);
+        color: var(--color-primary-dark);
+        border: var(--button-border) var(--color-primary-dark);
+      }
+    }
+  }
+
+  .laboratorio-home {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    p {
+      width: 75%;
+
+      @media (width < 992px) {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+
+      @media (width < 992px) {
+        height: 30vh;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--color-primary-dark);
+      font-size: var(--size-h4);
+      font-family: var(--fonts-heading);
+    }
+  }
+
+  .vigilancia-home {
+    background-color: var(--color-verde-ddhub);
+    padding: 5rem 0;
+
+    p {
+      width: 75%;
+
+      @media (width < 992px) {
+        width: 100%;
+      }
+    }
+
+    .box-img-home {
+      width: 100%;
+      height: 40vh;
+      overflow: hidden;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+
+      @media (width < 992px) {
+        height: 30vh;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .box-content-home {
+      padding: 40px;
+
+      @media (width < 992px) {
+        padding: 1rem;
+      }
+    }
+  }
+
+  .noticias-destacadas-home {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
     .img-destacada {
       height: 50vh;
 
@@ -61,28 +196,58 @@ main {
         text-transform: uppercase;
       }
     }
+
+    figure {
+      margin-bottom: 0;
+    }
   }
 
-  .home-noticias {
-    article {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+  .contacto-home {
+    padding: 10rem 0;
+    background-color: #EBE6D6;
 
-      .box-img {
-        width: 35%;
-        height: 20rem;
+    .button-ddhub {
+      border: var(--button-border) var(--color-primary-dark);
+      color: var(--color-primary-dark);
+
+      @media (width < 576px) {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (width < 992px) {
+  main {
+    .content-autor-home {
+      gap: 0;
+
+      .img-autor {
+        overflow: hidden;
+        clip-path: none;
 
         img {
+          position: absolute;
+          top: 0;
           width: 100%;
-          height: 100%;
-          object-fit: cover;
         }
       }
+      .info-autor {
+        padding: 2rem;
+      }
+    }
+  }
+}
 
-      .button-ddhub {
-        border: var(--button-border) var(--color-primary-dark);
-        color: var(--color-primary-dark);
-        text-transform: uppercase;
+@media (width < 576px) {
+  main {
+    .content-autor-home {
+      .info-autor {
+        .button-autor {
+          width: 100%;
+          justify-content: space-between;
+        }
       }
     }
   }
