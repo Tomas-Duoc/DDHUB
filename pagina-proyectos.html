@@ -4,14 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DDHUB</title>
+    <title>Observatorio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/proyectos.css">
     <link rel="stylesheet" href="assets/css/layout.css">
 </head>
-
 <body>
     <header>
         <nav id="nav-header" class="navbar navbar-header-custom navbar-expand-xl p-0">
@@ -334,27 +333,32 @@
             </div>
         </nav>
 
-        <section class="hero vh-100">
-            <video src="assets/videos/video-ddhub.mp4" autoplay loop muted></video>
-            <div class="container h-100 mb-5">
-                <div class="row align-items-center h-100 row-hero">
-                    <div class="col-12 col-lg-6">
+        <section class="pag-hero">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 d-flex align-items-center justify-content-center flex-column h-100">
                         <img src="assets/img/logo-ddhub.png" alt="Logo DDHUB" class="logo-ddhub">
-                        <h1>Somos un espacio para la innovación y el aprendizaje activo guiado por el Diseño.</h1>
-                        <div class="buttons-hero d-flex gap-3 mt-5 flex-wrap">
-                            <a href="#" class="button-ddhub button-fill">Ver Proyectos</a>
-                            <a href="#" class="button-ddhub button-border">Conoce más del DDHUB</a>
-                        </div>
+                        <h1 class="text-center">Proyectos Estratégicos</h1>
                     </div>
                 </div>
             </div>
         </section>
-    </header>
-
-    <main id="padding-main" class="proyecto-main">
-
-        <!-- NAV PARA GIT-PAGES -->
-        <nav class="d-flex justify-content-center gap-3 py-4 flex-wrap">
+        <nav class="pag-nav">
+            <div class="container">
+                <ul class="p-0 m-0 row justify-content-center">
+                    <li class="col-12 col-md-3 col-lg-2 item"><a href="index.html">Inicio</a></li>
+                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Sobre el DDHUB</a></li>
+                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Proyectos I+D+i</a></li>
+                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Vigilancia</a></li>
+                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Noticias</a></li>
+                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>   
+    <main>
+       <nav class="d-flex justify-content-center gap-3 flex-wrap">
+            <a class="text-decoration-none text-dark" href="index.html">Inicio</a>
             <a class="text-decoration-none text-dark" href="single-proyecto.html">Single-Proyectos</a>
             <a class="text-decoration-none text-dark" href="single-noticia.html">Single-Noticias</a>
             <a class="text-decoration-none text-dark" href="single-articulo.html">Single-Articulos</a>
@@ -364,143 +368,100 @@
             <a class="text-decoration-none text-dark" href="pagina-proyectos.html">Proyectos</a>
         </nav>
 
-        <section class="proyectos-home w-100">
+        <section class="seccion-ddhub">
             <div class="container">
-                <div class="row mb-2">
-                    <h2>Proyectos I+D+i</h2>
-                    <p>Contamos con una red de talleres y laboratorios a nivel nacional que ofrecen los recursos necesarios para potenciar la experiencia de aprendizaje en contextos reales, así como también propiciar el pensamiento creativo y la innovación.</p>
+                <div class="row justify-content-center gap-4">
+                    <h2 class="text-center">Conoce los laboratorios experimentales</h2>
+                    <p class="text-center w-75">Contamos con una red de talleres y laboratorios a nivel nacional que ofrecen los recursos necesarios para potenciar la experiencia de aprendizaje en contextos reales, así como también propiciar el pensamiento creativo y la innovación.</p>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <a href=""><img src="assets/img/articulo-relacionado.png" alt="Proyetos Aplica"></a>
-                        <a href="#" class="link-hover">Aplica</a>                    
+                <div class="row row-obj row-cols-1 row-cols-md-3">
+                    <div class="col">
+                        <h3 class="title-obj">Objetivo 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed molestie velit, quis mollis ante. Cras ornare tempor turpis nec pharetra. Proin id mi sit amet elit fermentum eleifend.</p>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <a href="" ><img src="assets/img/proyecto.jpg" alt="Proyectos Estratégicos"></a>
-                        <a href="#" class="link-hover">Proyectos Estratégicos</a>
+                    <div class="col">
+                        <h3 class="title-obj">Objetivo 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed molestie velit, quis mollis ante. Cras ornare tempor turpis nec pharetra. Proin id mi sit amet elit fermentum eleifend.</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="title-obj">Objetivo 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed molestie velit, quis mollis ante. Cras ornare tempor turpis nec pharetra. Proin id mi sit amet elit fermentum eleifend.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid p-0">
-            <div class="row content-autor-home m-0 justify-content-end">
-                <div class="col-12 col-lg-5 d-flex align-items-center info-autor">
-                    <div class="d-flex flex-column info-autor-content gap-3">
-                        <h2>Laboratorios de la Escuela de Diseño</h2>
-                        <p class="w-75">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</p>
-                        <a href="#" class="button-ddhub button-autor">CONOCE NUESTROS LABORATORIOS <i
-                                class="bi bi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5 img-autor pe-0">
-                    <img src="assets/img/autor.png" alt="Nombre del Autor">
-                </div>
-            </div>
-        </section>
-
-        <section class="container laboratorio-home">
-            <div class="row mb-2">
-                <h2>Laboratorios experimentales</h2>
-                <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
-            </div>
+        <section class="proyectos-ddhub container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <a href=""><img src="assets/img/articulo-relacionado.png" alt="Laboratorio materiales sustentables"></a>
-                    <a href="#" class="link-hover">Laboratorio materiales sustentables</a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <a href=""><img src="assets/img/proyecto.jpg" alt="Laboratorio de revalorización y experimentación textil"></a>
-                    <a href="#" class="link-hover">Laboratorio de revalorización y experimentación textil</a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <a href=""><img src="assets/img/lab-home.png" alt="Laboratorio del juego"></a>
-                    <a href="#" class="link-hover">Laboratorio del juego</a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <a href=""><img src="assets/img/articulo-relacionado.png" alt="Koojlab"></a>
-                    <a href="#" class="link-hover">Koojlab</a>
+                <div class="col">
+                    <h3>Nuestros proyectos</h3>
                 </div>
             </div>
-        </section>
-
-        <section class="vigilancia-home">
-            <div class="container">
-                <div class="row justify-content-center mb-2">
-                    <h2 class="text-center mb-4">Vigilancia</h2>
-                    <p class="text-center">Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="box-img-home">
-                            <img src="assets/img/noticia.png" alt="Observatorio de Tendencias">
-                        </div>
-                        <div class="box-content-home">
-                            <h3>Observatorio de Tendencias</h3>
-                            <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
-                        </div>
+            <div class="row row-proyects row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <figure class="col">
+                    <div class="proyects-img">
+                        <img src="assets/img/noticia.png" alt="proyectos">
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="box-img-home">
-                            <img src="assets/img/lab-home.png" alt="Revista de Tendencias">
-                        </div>
-                        <div class="box-content-home">
-                            <h3>Revista de Tendencias</h3>
-                            <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
-                        </div>
+                    <figcaption>
+                        <h4>Proyecto 1</h4>
+                        <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
+                        <a href="single-proyecto.html" class="button-ddhub text-uppercase">Ver Proyecto <i class="bi bi-chevron-right"></i></a>
+                    </figcaption> 
+                </figure>
+                <figure class="col">
+                    <div class="proyects-img">
+                        <img src="assets/img/noticia.png" alt="proyectos">
                     </div>
-                </div>
+                    <figcaption>
+                        <h4>Proyecto 2</h4>
+                        <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
+                        <a href="single-proyecto.html" class="button-ddhub text-uppercase">Ver Proyecto <i class="bi bi-chevron-right"></i></a>
+                    </figcaption>
+                </figure>
+                <figure class="col">
+                    <div class="proyects-img">
+                        <img src="assets/img/noticia.png" alt="proyectos">
+                    </div>
+                    <figcaption>
+                        <h4>Proyecto 3</h4>
+                        <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
+                        <a href="single-proyecto.html" class="button-ddhub text-uppercase">Ver Proyecto <i class="bi bi-chevron-right"></i></a>
+                    </figcaption>
+                </figure>
+                <figure class="col">
+                    <div class="proyects-img">
+                        <img src="assets/img/noticia.png" alt="proyectos">
+                    </div>
+                    <figcaption>
+                        <h4>Proyecto 4</h4>
+                        <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
+                        <a href="single-proyecto.html" class="button-ddhub text-uppercase">Ver Proyecto <i class="bi bi-chevron-right"></i></a>
+                    </figcaption>
+                </figure>
+                <figure class="col">
+                    <div class="proyects-img">
+                        <img src="assets/img/noticia.png" alt="proyectos">
+                    </div>
+                    <figcaption>
+                        <h4>Proyecto 5</h4>
+                        <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
+                        <a href="single-proyecto.html" class="button-ddhub text-uppercase">Ver Proyecto <i class="bi bi-chevron-right"></i></a>
+                    </figcaption>
+                </figure>
+                <figure class="col">
+                    <div class="proyects-img">
+                        <img src="assets/img/noticia.png" alt="proyectos">
+                    </div>
+                    <figcaption>
+                        <h4>Proyecto 6</h4>
+                        <p>Somos un espacio de innovación y aprendizaje activo guiado por el Diseño. Formamos parte de la Escuela de Diseño de Duoc UC y nuestro propósito es impulsar transformaciones a través del Diseño.</p>
+                        <a href="single-proyecto.html" class="button-ddhub text-uppercase">Ver Proyecto <i class="bi bi-chevron-right"></i></a>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
-        <section class="container noticias-destacadas-home">
-            <div class="row mb-5">
-                <div class="col"><h2>Noticias Destacadas</h2></div>
-            </div>
-            <div class="row home-noticia-destacada mb-5">
-                <div class="col-12 col-lg-6 img-destacada">
-                    <a href="#"><img src="assets/img/articulo-relacionado.png" alt="Noticia Destacada"></a>
-                </div>
-                <div class="col-12 col-lg-6 text-destacada">
-                    <p class="text-uppercase">PUBLICADO EL 10 DE OCTUBRE</p>
-                    <h3 class="mb-3">Revista de Tendencias lanza nueva propuesta de investigación para docentes</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    <a href="#" class="button-ddhub mt-4">Ver Noticia <i
-                        class="bi bi-chevron-right"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <figure class="col-12 col-sm-6 col-lg-4 noticia card-ddhub">
-                <div class="box-img-card">
-                    <a href="#"><img src="assets/img/articulo-relacionado.png" alt="Articulo"></a>
-                </div>
-                <figcaption>
-                    <p class="art-text-small">PUBLICADO EL 10 DE OCTUBRE</p>
-                    <a href="#"><h3>Sede Melipilla aumenta su oferta académica en carreras del área de la Salud</h3></a>
-                </figcaption>
-            </figure>
-            <figure class="col-12 col-sm-6 col-lg-4 noticia card-ddhub">
-                <div class="box-img-card">
-                    <a href="#"><img src="assets/img/articulo-relacionado.png" alt="Articulo"></a>
-                </div>
-                <figcaption>
-                    <p class="art-text-small">PUBLICADO EL 10 DE OCTUBRE</p>
-                    <a href="#"><h3>Sede Melipilla aumenta su oferta académica en carreras del área de la Salud</h3></a>
-                </figcaption>
-            </figure>
-            <figure class="col-12 col-sm-6 col-lg-4 noticia card-ddhub">
-                <div class="box-img-card">
-                    <a href="#"><img src="assets/img/articulo-relacionado.png" alt="Articulo"></a>
-                </div>
-                <figcaption>
-                    <p class="art-text-small">PUBLICADO EL 10 DE OCTUBRE</p>
-                    <a href="#"><h3>Sede Melipilla aumenta su oferta académica en carreras del área de la Salud</h3></a>
-                </figcaption>
-            </figure>
-            </div>
-        </section>
-
-        <section class="contacto-home">
+        <section class="contacto-proyects">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-5">
@@ -511,192 +472,6 @@
                 </div>
             </div>
         </section>
-
     </main>
-
-    <footer>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-xl-3">
-                <!-- Contáctanos -->
-                <div class="col column-1">
-                    <button class="footer-toggle d-xl-none w-100 text-start" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#footer-contacto" aria-expanded="false">
-                        <h3 class="title-footer">Contáctanos</h3> <i data-feather="chevron-up" class="chevron-icon"></i>
-                    </button>
-                    <div class="collapse d-xl-block accordion-footer" id="footer-contacto">
-                        <div class="box-title d-none d-xl-block">
-                            <h3 class="title-footer">Contáctanos</h3>
-                        </div>
-                        <a class="btn btn-primary btn-footer" role="button" target="_blank"
-                            href="https://www.duoc.cl/contacto/">Contáctanos <i data-feather="chevron-right"></i></a>
-                        <section class="py-3">
-                            <h4 class="h5 font-weight-bold">Admisión</h4>
-                            <p class="mb-1">(+56) 227 120640</p>
-                            <p class="mb-0">WhatsApp: <a target="_blank" href="https://wa.me/56958142089" href="#"
-                                    class="number-footer"><i class="bi bi-whatsapp ms-2"></i>+56958142089</a></p>
-                        </section>
-                        <section class="py-3">
-                            <h4 class="h5 font-weight-bold">Cursos y Diplomados</h4>
-                            <p class="mb-1">(+56) 442201096</p>
-                            <p class="mb-0">(+56) 227120246</p>
-                        </section>
-                        <section class="py-3">
-                            <h4 class="h5 font-weight-bold">MESA DE SERVICIOS</h4>
-                            <p class="mb-1">WhatsApp: <a target="_blank" href="https://wa.me/56936639565"
-                                    class="number-footer"><i class="bi bi-whatsapp ms-2"></i>+56936639565</a></p>
-                            <ul class="p-0">
-                                <li>
-                                    <p>Servicios Académicos</p>
-                                </li>
-                                <li>
-                                    <p>Servicios de Financiamiento</p>
-                                </li>
-                                <li>
-                                    <p>Servicios de Vida Estudiantil</p>
-                                </li>
-                                <li>
-                                    <p>Servicios Tecnológicos</p>
-                                </li>
-                                <li>
-                                    <p>Otros Servicios</p>
-                                </li>
-                            </ul>
-                            <h5 class="h5 font-weight-bold">Teléfonos</h5>
-                            <p class="mb-1">(+56) 442 201 098</p>
-                            <p class="mb-0">(+56) 227 120 245</p>
-                        </section>
-                        <section class="pt-5 box-rrss">
-                            <div class="d-flex justify-content-between">
-                                <a target="_blank" href="https://www.instagram.com/duocuc_cl/" class="dc-icon-footer"><i
-                                        data-feather="instagram"></i></a>
-                                <a target="_blank" href="https://www.linkedin.com/company/duocuc/"
-                                    class="dc-icon-footer"><i data-feather="linkedin"></i></a>
-                                <a target="_blank" href="https://www.youtube.com/user/DuocUCvideos"
-                                    class="dc-icon-footer"><i data-feather="youtube"></i></a>
-                                <a target="_blank" href="https://twitter.com/DuocUC" class="dc-icon-footer"><i
-                                        data-feather="twitter"></i></a>
-                                <a target="_blank" href="https://www.facebook.com/DuocUC/" class="dc-icon-footer"><i
-                                        data-feather="facebook"></i></a>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <!-- Oferta Académica -->
-                <div class="col column-2">
-                    <button class="footer-toggle d-xl-none w-100 text-start mb-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#footer-oferta" aria-expanded="false">
-                        <h3 class="title-footer">Oferta Académica</h3> <i data-feather="chevron-up"
-                            class="chevron-icon"></i>
-                    </button>
-                    <div class="collapse d-xl-block accordion-footer mb-5" id="footer-oferta">
-                        <div class="box-title d-none d-xl-block">
-                            <h3 class="title-footer">Oferta Académica</h3>
-                        </div>
-                        <ul class="p-0">
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/escuela/diseno/oferta-academica/">Carreras</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/carreras/ilustracion/">Ilustración</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/carreras/desarrollo-y-diseno-web/">Desarrollo
-                                    y Diseño Web</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/carreras/diseno-ambientes/">Diseño de
-                                    Ambientes</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/carreras/diseno-industrial/">Diseño
-                                    Industrial</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/carreras/diseno-grafico/">Diseño
-                                    Gráfico</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/carreras/diseno-de-vestuario/">Diseño de
-                                    Vestuario</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/escuela/diseno/oferta-academica/cursos-y-diplomados/">Educación
-                                    Contínua</a></li>
-                            <li><a target="_blank" href="http://www.rutasformativasedd.cl/">Rutas formativas</a></li>
-                        </ul>
-                    </div>
-                    <button class="footer-toggle d-xl-none w-100 text-start" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#footer-enlaces" aria-expanded="false">
-                        <h3 class="title-footer">RRSS de la Escuela</h3> <i data-feather="chevron-up"
-                            class="chevron-icon"></i>
-                    </button>
-                    <div class="collapse d-xl-block accordion-footer" id="footer-enlaces">
-                        <div class="box-title d-none d-xl-block">
-                            <h3 class="title-footer">RRSS de la Escuela</h3>
-                        </div>
-                        <ul class="p-0">
-                            <li><a target="_blank" href="https://www.behance.net/DisenoDuocUC">Behance</a></li>
-                            <li><a target="_blank" href="https://www.youtube.com/c/DisenoDuocUC">Youtube</a></li>
-                            <li><a target="_blank" href="https://www.instagram.com/disenoduocuc/?hl=es">Instagram</a>
-                            </li>
-                            <li><a target="_blank"
-                                    href="https://web.facebook.com/EscuelaDisenoDuoc?_rdc=1&_rdr">Facebook</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.linkedin.com/showcase/titulados-escuela-de-dise%C3%B1o-duoc-uc/">Linkedin</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Nosotros -->
-                <div class="col">
-                    <button class="footer-toggle d-xl-none w-100 text-start mb-5" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#footer-nosotros" aria-expanded="false">
-                        <h3 class="title-footer">Nosotros</h3> <i data-feather="chevron-up" class="chevron-icon"></i>
-                    </button>
-                    <div class="collapse d-xl-block accordion-footer mb-5" id="footer-nosotros" class="mb-5">
-                        <div class="box-title d-none d-xl-block">
-                            <h3 class="title-footer">Nosotros</h3>
-                        </div>
-                        <ul class="p-0">
-                            <li><a target="_blank" href="https://www.duoc.cl/nosotros/">SOBRE DUOC UC</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/nosotros/donde-estamos/sedes/">SEDES Y
-                                    CAMPUS</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/sala-de-prensa/">SALA DE PRENSA</a></li>
-                            <li><a target="_blank" href="https://extension.duoc.cl/">EXTENSIÓN</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/nosotros/vinculacionconelmedio/">VINCULACIÓN CON EL
-                                    MEDIO</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/nosotros/investigacion-aplicada/">INVESTIGACIÓN APLICADA E
-                                    INNOVACIÓN</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/vida-estudiantil/innovacion-emprendimiento/">INNOVACIÓN &
-                                    EMPRENDIMIENTO ESTUDIANTIL</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/internacionalizacion/">INTERNACIONALIZACIÓN</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/nosotros/calidad-acreditacion/">CALIDAD Y
-                                    ACREDITACIÓN</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/nosotros/sobre-duoc/transparencia/">TRANSPARENCIA</a></li>
-                            <li><a target="_blank"
-                                    href="https://www.duoc.cl/nosotros/sobre-duoc/transparencia/memoria-anual/">MEMORIA
-                                    ANUAL</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/proyectos-servicios/">PROYECTOS Y
-                                    SERVICIOS</a></li>
-                            <li><a target="_blank" href="https://www.duoc.cl/unete-a-nuestro-equipo/">ÚNETE A NUESTRO
-                                    EQUIPO</a></li>
-                        </ul>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid contain-img-footer">
-            <div class="row justify-content-between">
-                <div class="col">
-                    <img src="assets/img/logo-duoc.png" class="img-footer-1" alt="Duoc UC">
-                </div>
-                <div class="col d-flex justify-content-end">
-                    <img src="assets/img/acreditacion.webp" class="img-footer-2" alt="7 Años acreditado">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/layout.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
 </body>
-
 </html>

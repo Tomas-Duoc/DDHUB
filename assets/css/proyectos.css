@@ -1,0 +1,76 @@
+.seccion-ddhub {
+  background-color: var(--color-negro-ddhub);
+  padding: 5rem 0;
+  color: var(--color-primary-light);
+
+  .row-obj {
+    margin-top: 5rem;
+    position: relative;
+
+    .title-obj {
+      position: relative;
+      padding-left: 1rem;
+      margin-bottom: 1.2rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 100%;
+        background-color: var(--color-verde-ddhub);
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.proyectos-ddhub {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  h3 {
+    margin-bottom: 3rem;
+  }
+
+  .row-proyects {
+    figure {
+      margin-top: 2rem;
+
+      .proyects-img {
+        height: 30rem;
+        margin-bottom: 3rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      p {
+        margin-bottom: 3rem;
+      }
+
+      .button-ddhub {
+        border: var(--button-border) var(--color-primary-dark);
+        color: var(--color-primary-dark);
+      }
+    }
+  }
+}
+
+.contacto-proyects {
+  padding: 10rem 0;
+  background-color: #ebe6d6;
+
+  .button-ddhub {
+    border: var(--button-border) var(--color-primary-dark);
+    color: var(--color-primary-dark);
+
+    @media (width < 576px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

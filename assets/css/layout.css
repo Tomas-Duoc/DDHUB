@@ -25,6 +25,46 @@
 }
 
 /*============ 
+==== Pag Hero =====*/
+.pag-hero {
+  background-image: url("../img/back-hero-pag.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+
+  img {
+    width: 30%;
+  }
+
+  h1 {
+    color: #ffff;
+  }
+}
+/*============ 
+==== Pag Nav =====*/
+.pag-nav {
+  background-color: var(--color-primary-dark);
+  padding: 3rem 0;
+
+  .item {
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: var(--color-primary-light);
+      font-weight: 700;
+      font-size: var(--size-body);
+      padding: 1rem 0;
+
+      &:hover {
+        color: var(--color-principal);
+      }
+    }
+  }
+}
+
+/*============ 
 ==== buttons =====*/
 .button-ddhub {
   display: flex;
