@@ -1,0 +1,88 @@
+.content-contacto {
+  background-color: var(--color-negro-ddhub);
+
+  .img-contacto {
+    overflow: hidden;
+    clip-path: ellipse(84% 85% at 95% 50%);
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -310px;
+      right: 0;
+    }
+  }
+
+  .info-contacto {
+    color: var(--color-primary-light);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .col-form {
+      padding: 0.3rem !important;
+
+      input,
+      textarea {
+        width: 100%;
+        background-color: #1c242b;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        padding: 0.5rem;
+        color: var(--color-primary-light);
+        transition: border 0.3s ease;
+
+        &::placeholder {
+          font-size: var(--size-body);
+          color: #ffffff9c;
+        }
+
+        &:focus-visible {
+          outline: none;
+          border: 1px solid var(--color-verde-ddhub);
+        }
+      }
+
+      button {
+        background-color: var(--color-verde-ddhub);
+        color: var(--color-primary-dark);
+        border: none;
+        border-radius: 100px;
+        padding: 12px 24px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: var(--size-body);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: var(--button-transition);
+
+        &:hover {
+          transform: var(--button-transform);
+        }
+
+        i::before {
+          font-weight: 700 !important;
+          font-size: var(--size-body);
+        }
+      }
+    }
+  }
+
+  @media (width < 992px) {
+    gap: 0;
+
+    .img-contacto {
+      overflow: hidden;
+      clip-path: none;
+
+      img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+    .info-contacto {
+      padding: 2rem;
+    }
+  }
+}
