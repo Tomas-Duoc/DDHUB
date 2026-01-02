@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Observatorio de Tendencias</title>
+    <title>Observatorio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -353,32 +353,28 @@
             </nav>
         </nav>
 
-         <section class="pag-hero">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-12 d-flex align-items-center justify-content-center flex-column h-100">
-                        <img src="assets/img/logo-ddhub.png" alt="Logo DDHUB" class="logo-ddhub">
-                        <h1 class="text-center">Observatorio de Tendencias</h1>
+        <section id="padding-main" class="header-hero m-0">
+            <div class="container pt-5">
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-4 content-hero-portada d-flex flex-column gap-4">
+                        <p class="text-hero">OBSERVATORIO DE TENDENCIAS</p>
+                        <h1>Observatorio de tendencias</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                            pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
+                            aenean sed diam urna tempor.</p>
+                    </div>
+                    <div class="col-8 portada-images">
+                        <img src="assets/img/hero-observatorio-2.png" alt="Hero" class="img-big">
+                        <img src="assets/img/hero-observatorio.png" alt="Hero" class="img-small">
                     </div>
                 </div>
             </div>
         </section>
-        <nav class="pag-nav">
-            <div class="container">
-                <ul class="p-0 m-0 row justify-content-center">
-                    <li class="col-12 col-md-3 col-lg-2 item"><a href="index.html">Inicio</a></li>
-                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Sobre el DDHUB</a></li>
-                    <li class="col-12 col-md-3 col-lg-2 item"><a href="pagina-proyectos.html">Proyectos I+D+i</a></li>
-                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Vigilancia</a></li>
-                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Noticias</a></li>
-                    <li class="col-12 col-md-3 col-lg-2 item"><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
 
     </header>
 
-    <main>
+    <main class="observatorio-portada-main">
+
          <!-- NAV PARA GIT-PAGES -->
         <nav class="d-flex justify-content-center gap-3 py-4 flex-wrap">
             <a class="text-decoration-none text-dark" href="index.html">Inicio</a>
@@ -391,173 +387,154 @@
             <a class="text-decoration-none text-dark" href="pagina-proyectos.html">Proyectos</a>
         </nav>
 
-        <section class="seccion-tendencias">
+        <section class="portada-radar">
+            <h2>Radar</h2>
             <div class="container">
                 <div class="row">
-                    <h2 class="mb-5">Observatorio de Tendencias</h2>
-                    <div class="col-12 col-md-8">
-                        <p>El observatorio de tendencias del DDHUB es un espacio que, siguiendo los lineamientos institucionales, realiza vigilancia tecnológica/disciplinar, a través de la gestión en tiempo real de distintas fuentes de información (públicas y privadas) con foco en aquellos ámbitos que propician la generación de innovación en Diseño.</p>
-                        <p>El observatorio de tendencias del DDHUB es un espacio que, siguiendo los lineamientos institucionales, realiza vigilancia tecnológica/disciplinar, a través de la gestión en tiempo real de distintas fuentes de información (públicas y privadas) con foco en aquellos ámbitos que propician la generación de innovación en Diseño.</p>
+                    <div class="col-12 col-lg-6">
+                        <div class="radar-img">
+                            <img src="assets/img/portada-radar.png" alt="Portada-Radar">
+                        </div>
+                        <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                        <p class="text-left_radar">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+                            faucibus ex sapien vitae
+                            pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
+                            aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+                            Iaculis massa nisl malesuada lacinia integer nunc posuere.</p>
+                        <a href="#" class="button-ddhub link-radar_portada">BOTÓN PRIMARIO <i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex flex-column gap-5">
+                        <article class="portada-radar_noticia row align-items-center">
+                            <div class="col col-xxl-8 radar-article_img">
+                                <img src="assets/img/radar-article.png" alt="Radar Article">
+                            </div>
+                            <div class="col col-xxl-4">
+                                <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                <a href="#" class="art-link">leer Noticia</a>
+                            </div>
+                        </article>
+                        <article class="portada-radar_noticia row align-items-center">
+                            <div class="col col-xxl-8 radar-article_img">
+                                <img src="assets/img/radar-article.png" alt="Radar Article">
+                            </div>
+                            <div class="col col-xxl-4">
+                                <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                <a href="#" class="art-link">leer Noticia</a>
+                            </div>
+                        </article>
+                        <article class="portada-radar_noticia row align-items-center">
+                            <div class="col col-xxl-8 radar-article_img">
+                                <img src="assets/img/radar-article.png" alt="Radar Article">
+                            </div>
+                            <div class="col col-xxl-4">
+                                <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                <a href="#" class="art-link">leer Noticia</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container obj-tendencias">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col col-obj-tendencias">
-                    <h3>Objetivo general</h3>
-                    <p>Ofrecer un espacio de desarrollo para alumnos y docentes con potencial y capacidades para realizar vigilancia tecnológica/disciplinar, contribuyendo con información relevante, actualizada y estratégica en el ámbito del Diseño a la Escuela y al ecosistema de innovación interno y externo.</p>
-                </div>
-                <div class="col col-obj-tendencias">
-                    <h3>Objetivo específicos</h3>
-                    <p>Generar una base de conocimiento documentada de nuevas tendencias en el ámbito del Diseño que contribuyan al desarrollo de proyectos, investigaciones y publicaciones. Construir equipos de personas capaces de realizar vigilancia tecnológica/disciplinar. Generar actividades de formación y difusión que permitan dar a conocer el nuevo conocimiento.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="recientes-tendencias">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3>Investigaciones recientes</h3>
-                    </div>
-                </div>
-                <div class="row tendencias-destacada mb-5">
-                    <div class="col-12 col-lg-6 img-destacada">
-                        <a href="#"><img src="assets/img/articulo-relacionado.png" alt="Noticia Destacada"></a>
-                    </div>
-                    <div class="col-12 col-lg-6 text-destacada">
-                        <p class="text-uppercase">PUBLICADO EL 10 DE OCTUBRE</p>
-                        <h3 class="mb-3">Revista de Tendencias lanza nueva propuesta de investigación para docentes</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <a href="#" class="button-ddhub mt-4">Ver Noticia <i
-                            class="bi bi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <figure class="col-12 col-sm-6 col-lg-4 tendencias card-ddhub">
-                        <div class="box-img-card">
-                            <a href="single-articulo.html"><img src="assets/img/articulo-relacionado.png" alt="Articulo"></a>
-                        </div>
-                        <figcaption>
-                            <p class="art-text-small">PUBLICADO EL 10 DE OCTUBRE</p>
-                            <a href="single-articulo.html"><h3>Sede Melipilla aumenta su oferta académica en carreras del área de la Salud</h3></a>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-12 col-sm-6 col-lg-4 tendencias card-ddhub">
-                        <div class="box-img-card">
-                            <a href="single-articulo.html"><img src="assets/img/articulo-relacionado.png" alt="Articulo"></a>
-                        </div>
-                        <figcaption>
-                            <p class="art-text-small">PUBLICADO EL 10 DE OCTUBRE</p>
-                            <a href="single-articulo.html"><h3>Sede Melipilla aumenta su oferta académica en carreras del área de la Salud</h3></a>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-12 col-sm-6 col-lg-4 tendencias card-ddhub">
-                        <div class="box-img-card">
-                            <a href="single-articulo.html"><img src="assets/img/articulo-relacionado.png" alt="Articulo"></a>
-                        </div>
-                        <figcaption>
-                            <p class="art-text-small">PUBLICADO EL 10 DE OCTUBRE</p>
-                            <a href="single-articulo.html"><h3>Sede Melipilla aumenta su oferta académica en carreras del área de la Salud</h3></a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="d-flex box-btn justify-content-center">
-                <a href="#" class="button-ddhub mt-4">VER TODAS LAS INVESTIGACIONES <i class="bi bi-chevron-right"></i></a>
-            </div>
-        </section>
-
-        <section class="container-fluid p-0 revista-tendencias">
-            <div class="row content-autor m-0">
-                <div class="col-12 col-lg-5 img-autor ps-0">
-                    <img src="assets/img/portada-radar.png" alt="Nombre del Autor">
-                </div>
+        <section class="container-fluid p-0">
+            <div class="row content-autor-observatorio m-0 justify-content-end">
                 <div class="col-12 col-lg-4 d-flex align-items-center info-autor">
-                    <div class="d-flex flex-column info-autor-content">
-                        <h3>Revista de tendencias</h3>
+                    <div class="d-flex flex-column info-autor-content gap-3">
+                        <p>SOBRE EL AUTOR</p>
+                        <h2>Ellie Doe</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
                             pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
                             aenean
                             sed diam urna tempor. </p>
-                        <a href="#" class="button-ddhub mt-4">IR A LA REVISTA DE TENDENCIAS <i class="bi bi-chevron-right"></i></a>
+                        <a href="#" class="button-ddhub button-autor">BOTÓN PRIMARIO <i
+                                class="bi bi-chevron-right"></i></a>
                     </div>
+                </div>
+                <div class="col-12 col-lg-5 img-autor pe-0">
+                    <img src="assets/img/autor.png" alt="Nombre del Autor">
                 </div>
             </div>
         </section>
 
-        <section class="container equipo-tendencias">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="title-equipo">Equipo Observatorio de tendencias</h3>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <figure class="col">
-                    <div class="equipo-img">
-                        <img src="assets/img/equipo.png" alt="Nombre">
-                    </div>
-                    <figcaption>
-                        <h4 class="equipo-nombre">Luis Ahumada Inostroza</h4>
-                        <ul class="equipo-cargos">
-                            <li>Docente de la Escuela de Diseño.</li>
-                            <li>Coordinador observatorio de tendencias DDHUB.</li>
-                        </ul>
-                        <p class="equipo-email">l.ahumadai@profesor.duoc.cl</p>
-                    </figcaption>
-                </figure>
-                <figure class="col">
-                    <div class="equipo-img">
-                        <img src="assets/img/equipo.png" alt="Nombre">
-                    </div>
-                    <figcaption>
-                        <h4 class="equipo-nombre">Luis Ahumada Inostroza</h4>
-                        <ul class="equipo-cargos">
-                            <li>Docente de la Escuela de Diseño.</li>
-                            <li>Coordinador observatorio de tendencias DDHUB.</li>
-                        </ul>
-                        <p class="equipo-email">l.ahumadai@profesor.duoc.cl</p>
-                    </figcaption>
-                </figure>
-                <figure class="col">
-                    <div class="equipo-img">
-                        <img src="assets/img/equipo.png" alt="Nombre">
-                    </div>
-                    <figcaption>
-                        <h4 class="equipo-nombre">Luis Ahumada Inostroza</h4>
-                        <ul class="equipo-cargos">
-                            <li>Docente de la Escuela de Diseño.</li>
-                            <li>Coordinador observatorio de tendencias DDHUB.</li>
-                        </ul>
-                        <p class="equipo-email">l.ahumadai@profesor.duoc.cl</p>
-                    </figcaption>
-                </figure>
-                <figure class="col">
-                    <div class="equipo-img">
-                        <img src="assets/img/equipo.png" alt="Nombre">
-                    </div>
-                    <figcaption>
-                        <h4 class="equipo-nombre">Luis Ahumada Inostroza</h4>
-                        <ul class="equipo-cargos">
-                            <li>Docente de la Escuela de Diseño.</li>
-                            <li>Coordinador observatorio de tendencias DDHUB.</li>
-                        </ul>
-                        <p class="equipo-email">l.ahumadai@profesor.duoc.cl</p>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="contacto">
+        <section class="portada-zoom container-fluid position-relative">
+            <h2>Zoom</h2>
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <h2>Si tienes dudas, escríbenos</h2>
-                        <p class="my-4">Contamos con una red de talleres y laboratorios a nivel nacional que ofrecen los recursos necesarios para potenciar la experiencia de aprendizaje en contextos reales, así como también propiciar el pensamiento creativo y la innovación.</p>
-                        <a href="#" class="button-ddhub">DIRÍGETE  A  NUESTRA PÁGINA DE CONTACTO <i class="bi bi-chevron-right"></i></a>
+                <div class="row m-0">
+                    <figure class="col-12 col-sm-6 col-lg-3 card-zoom card-ddhub m-0">
+                        <div class="img-zoom">
+                            <img src="assets/img/articulo-galeria-2.png" alt="Zoom">
+                        </div>
+                        <figcaption>
+                            <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            <a href="#" class="art-link">leer Noticia <i class="bi bi-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-12 col-sm-6 col-lg-3 card-zoom card-ddhub m-0">
+                        <div class="img-zoom">
+                            <img src="assets/img/articulo-galeria-2.png" alt="Zoom">
+                        </div>
+                        <figcaption>
+                            <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            <a href="#" class="art-link">leer Noticia <i class="bi bi-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-12 col-sm-6 col-lg-3 card-zoom card-ddhub m-0">
+                        <div class="img-zoom">
+                            <img src="assets/img/articulo-galeria-2.png" alt="Zoom">
+                        </div>
+                        <figcaption>
+                            <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            <a href="#" class="art-link">leer Noticia <i class="bi bi-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-12 col-sm-6 col-lg-3 card-zoom card-ddhub m-0">
+                        <div class="img-zoom">
+                            <img src="assets/img/articulo-galeria-2.png" alt="Zoom">
+                        </div>
+                        <figcaption>
+                            <h4>LOREM IPSUM : Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                            <a href="#" class="art-link">leer Noticia <i class="bi bi-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid p-0">
+            <div class="row m-0 content-banner">
+                <div class="col-12 col-lg-5 img-banner ps-0">
+                    <img src="assets/img/portada-radar.png" alt="IMG banner">
+                </div>
+                <div class="col-12 col-lg-4 d-flex align-items-center info-banner">
+                    <div class="d-flex flex-column info-banner-content gap-3">
+                        <p>INSIGHT</p>
+                        <h2>Lorem Ipsum Dolor</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                            pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
+                            aenean sed diam urna tempor. </p>
+                        <a href="#" class="button-ddhub button-banner">BOTÓN PRIMARIO <i
+                                class="bi bi-chevron-right"></i></a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid observatorio-text">
+            <div class="row m-0 justify-content-center">
+                <div class="col col-md-6 content-text d-flex flex-column align-items-center">
+                    <h2>Data</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean
+                        sed diam urna tempor.</p>
+                    <a href="#" class="button-ddhub button-text">BOTÓN PRIMARIO <i class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
         </section>

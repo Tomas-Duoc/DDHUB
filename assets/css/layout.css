@@ -130,6 +130,23 @@
 }
 
 /*============ 
+==== CONTACTO =====*/
+.contacto {
+  padding: 10rem 0;
+  background-color: #ebe6d6;
+
+  .button-ddhub {
+    border: var(--button-border) var(--color-primary-dark);
+    color: var(--color-primary-dark);
+
+    @media (width < 576px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+/*============ 
 ==== NAV =====*/
 .navbar {
   position: fixed;
