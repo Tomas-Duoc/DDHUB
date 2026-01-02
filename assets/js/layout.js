@@ -90,3 +90,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Home 
+
+const linksHover = document.querySelectorAll(".link-hover");
+
+linksHover.forEach((link) => {
+  link.addEventListener("mouseenter", function () {
+    const prevLink = this.previousElementSibling;
+    if (prevLink) {
+      const img = prevLink.querySelector("img");
+      if (img) {
+        img.style.filter = "brightness(0.7)"; 
+        img.style.transition = "filter 0.3s ease"; 
+      }
+    }
+  });
+
+  link.addEventListener("mouseleave", function () {
+    const prevLink = this.previousElementSibling;
+    if (prevLink) {
+      const img = prevLink.querySelector("img");
+      if (img) {
+        img.style.filter = ""; 
+      }
+    }
+  });
+});

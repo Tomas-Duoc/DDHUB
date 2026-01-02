@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 
   video {
     position: absolute;
@@ -60,13 +60,18 @@ main {
       object-fit: cover;
       margin-top: 2rem;
       margin-bottom: 1rem;
+      transition: filter 0.3s ease;
+
+      &:hover {
+        filter: brightness(0.7);
+      }
 
       @media (width < 992px) {
         height: 30vh;
       }
     }
 
-    a {
+    .link-hover {
       text-decoration: none;
       color: var(--color-primary-dark);
       font-size: var(--size-h3);
@@ -120,13 +125,18 @@ main {
       object-fit: cover;
       margin-top: 2rem;
       margin-bottom: 1rem;
+      transition: filter 0.3s ease;
+
+      &:hover {
+        filter: brightness(0.5);
+      }
 
       @media (width < 992px) {
         height: 30vh;
       }
     }
 
-    a {
+    .link-hover {
       text-decoration: none;
       color: var(--color-primary-dark);
       font-size: var(--size-h4);
@@ -199,12 +209,19 @@ main {
 
     figure {
       margin-bottom: 0;
+
+      figcaption {
+        a {
+          text-decoration: none;
+          color: var(--color-primary-dark);
+        }
+      }
     }
   }
 
   .contacto-home {
     padding: 10rem 0;
-    background-color: #EBE6D6;
+    background-color: #ebe6d6;
 
     .button-ddhub {
       border: var(--button-border) var(--color-primary-dark);
