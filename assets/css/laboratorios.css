@@ -1,0 +1,81 @@
+.descripcion-laboratorios {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  p {
+    width: 75%;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.obj-laboratorios {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .col-obj-laboratorios {
+    padding: 0 3rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 100%;
+      background-color: var(--color-verde-ddhub);
+      top: 0;
+      left: 1rem;
+    }
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    @media (width < 768px) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.lab-laboratorios {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .lab-img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .lab-col-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-family: var(--fonts-heading);
+    }
+
+    .pre-title{
+        font-size: 1.5rem;
+        font-style: italic;
+        line-height: 120%;
+        letter-spacing: -2.2%;
+    }
+
+    span {
+      font-weight: 800;
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 2rem;
+    }
+  }
+}
