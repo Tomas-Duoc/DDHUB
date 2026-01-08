@@ -1,0 +1,68 @@
+.descripcion-laboratorios {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  p {
+    width: 75%;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.lab-laboratorios-2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .lab-img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .lab-col-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .p-content{
+      font-family: var(--fonts-heading);
+    }
+
+    span {
+      font-weight: 800;
+    }
+
+    .docentes{
+      display: flex;
+      align-items: center;
+
+      .box-img{
+        display: flex;
+        padding: 0 3rem 0 1rem;
+        
+        img{
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-left: -20px;
+        }
+      }
+
+      .docentes-name{
+        font-weight: 600;
+      }
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 2rem;
+    }
+  }
+}
