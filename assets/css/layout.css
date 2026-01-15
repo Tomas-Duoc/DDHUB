@@ -55,12 +55,16 @@
       color: var(--color-primary-light);
       font-weight: 700;
       font-size: var(--size-body);
-      padding: 1rem 0;
+      padding: 1rem;
 
       &:hover {
         color: var(--color-principal);
       }
     }
+  }
+
+  .item-active {
+    background-color: var(--color-principal);
   }
 }
 
@@ -142,6 +146,14 @@
 .contacto {
   padding: 10rem 0;
   background-color: #ebe6d6;
+  position: relative;
+
+  .img-contacto{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
 
   .button-ddhub {
     border: var(--button-border) var(--color-primary-dark);

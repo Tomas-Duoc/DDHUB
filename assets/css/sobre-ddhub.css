@@ -1,0 +1,65 @@
+.presentacion-ddhub{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+    .text-presentacion{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: var(--fonts-heading);
+        font-style: italic;
+
+        @media (max-width: 1200px) {
+            width: 75% !important;
+        }
+
+        @media (max-width: 576px) {
+            width: 100% !important;
+        }
+    }
+
+    .content{
+        padding: 2.5rem 4rem;
+        height: 100%;
+    }
+}
+
+.links-relacionados {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    p {
+      width: 75%;
+
+      @media (width < 992px) {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      transition: filter 0.3s ease;
+
+      &:hover {
+        filter: brightness(0.5);
+      }
+
+      @media (width < 992px) {
+        height: 30vh;
+      }
+    }
+
+    .link-hover {
+      text-decoration: none;
+      color: var(--color-azul);
+      font-size: var(--size-h4);
+      font-family: var(--fonts-heading);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
