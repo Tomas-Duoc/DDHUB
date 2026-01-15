@@ -73,9 +73,13 @@ main {
 
     .link-hover {
       text-decoration: none;
-      color: var(--color-primary-dark);
+      color: var(--color-azul);
       font-size: var(--size-h3);
       font-family: var(--fonts-heading);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -138,9 +142,13 @@ main {
 
     .link-hover {
       text-decoration: none;
-      color: var(--color-primary-dark);
+      color: var(--color-azul);
       font-size: var(--size-h4);
       font-family: var(--fonts-heading);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -213,7 +221,11 @@ main {
       figcaption {
         a {
           text-decoration: none;
-          color: var(--color-primary-dark);
+          color: var(--color-azul);
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
