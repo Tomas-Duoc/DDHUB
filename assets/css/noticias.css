@@ -1,0 +1,39 @@
+.pag-noticias {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .img-destacada {
+      height: 30rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .text-destacada {
+      padding: 2rem;
+
+      .button-ddhub {
+        border: var(--button-border) var(--color-primary-dark);
+        color: var(--color-primary-dark);
+        text-transform: uppercase;
+      }
+    }
+
+    figure {
+      margin-bottom: 0;
+
+      figcaption {
+        a {
+          text-decoration: none;
+          color: var(--color-azul);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
