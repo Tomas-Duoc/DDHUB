@@ -85,7 +85,7 @@ main {
 
     .img-autor {
       overflow: hidden;
-      height: 60vh;
+      height: 30rem;
       clip-path: ellipse(84% 85% at 95% 50%);
       position: relative;
 
@@ -121,7 +121,7 @@ main {
 
     img {
       width: 100%;
-      height: 50vh;
+      height: 25rem;
       object-fit: cover;
       margin-top: 2rem;
       margin-bottom: 1rem;
@@ -188,7 +188,7 @@ main {
     padding-bottom: 5rem;
 
     .img-destacada {
-      height: 50vh;
+      height: 30rem;
 
       img {
         width: 100%;

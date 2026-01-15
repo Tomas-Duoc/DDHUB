@@ -45,7 +45,6 @@
 
   .content-proyecto {
     margin-bottom: 5rem;
-    border: solid 2px var(--color-secondary-dark);
     padding: 2rem 1rem;
 
     .img-proyect {
@@ -87,23 +86,6 @@
       .content-left {
         height: 100%;
         background-color: #ECE6D5;
-      }
-    }
-  }
-
-  .proyectos-relacionados {
-    .proyecto {
-      object-fit: cover;
-
-      img {
-        width: 100%;
-      }
-
-      figcaption {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px;
-        gap: 24px;
       }
     }
   }

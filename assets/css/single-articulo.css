@@ -60,7 +60,7 @@ header {
 
         .img-autor {
             overflow: hidden;
-            height: 45vh;
+            height: 20rem;
             clip-path: ellipse(88% 85% at 1% 50%);
             position: relative;
 
