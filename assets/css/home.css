@@ -153,7 +153,7 @@ main {
   }
 
   .vigilancia-home {
-    background-color: var(--color-verde-ddhub);
+    background-color: var(--color-beige);
     padding: 5rem 0;
 
     p {
@@ -184,6 +184,14 @@ main {
 
     .box-content-home {
       padding: 40px;
+
+      h3{
+        color: var(--color-azul);
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
 
       @media (width < 992px) {
         padding: 1rem;

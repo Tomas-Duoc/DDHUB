@@ -1,0 +1,25 @@
+.vigilancia{
+    padding-top: 5rem;
+}
+
+.estrategicos-relacionados{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .box-img{
+        height: 30rem;
+        width: 100%;
+
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    .button-ddhub{
+        border: var(--button-border) var(--color-primary-dark);
+        color: var(--color-primary-dark);
+        margin-top: 2rem;
+    }
+}

@@ -2,11 +2,12 @@
   background-color: var(--color-negro-ddhub);
   padding: 5rem 0;
   color: var(--color-primary-light);
-}
 
-.obj-tendencias {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  .col-img {
+    img {
+      width: 45%;
+    }
+  }
 
   .col-obj-tendencias {
     padding: 0 3rem;
@@ -33,11 +34,16 @@
 }
 
 .recientes-tendencias {
-  background-color: var(--color-beige);
   padding: 5rem 0;
 
   h2 {
     margin-bottom: 4rem;
+  }
+
+  .button-ddhub {
+    border: var(--button-border) var(--color-primary-dark);
+    color: var(--color-primary-dark);
+    text-transform: uppercase;
   }
 
   .img-destacada {
@@ -53,10 +59,12 @@
   .text-destacada {
     padding: 2rem;
 
-    .button-ddhub {
-      border: var(--button-border) var(--color-primary-dark);
-      color: var(--color-primary-dark);
-      text-transform: uppercase;
+    h3{
+      color: var(--color-azul);
+
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 
@@ -68,14 +76,6 @@
         text-decoration: none;
         color: var(--color-primary-dark);
       }
-    }
-  }
-
-  .box-btn {
-    .button-ddhub {
-      background-color: var(--color-negro-ddhub);
-      color: var(--color-primary-light);
-      text-transform: uppercase;
     }
   }
 }
@@ -130,12 +130,12 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 
-  .title-equipo{
+  .title-equipo {
     margin-bottom: 5rem;
     position: relative;
     padding-left: 2rem;
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       width: 7px;
@@ -171,7 +171,7 @@
       padding: 0;
       font-size: var(--size-body);
     }
-    .equipo-email{
+    .equipo-email {
       font-size: var(--size-body);
       color: #868686;
     }
