@@ -76,6 +76,8 @@
 
     span {
       font-weight: 800;
+      color: var(--color-azul);
+      text-decoration: underline;
     }
 
     @media (min-width: 768px) {

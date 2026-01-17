@@ -1,0 +1,29 @@
+.seccion-ddhub {
+  background-color: var(--color-negro-ddhub);
+  padding: 5rem 0;
+  color: var(--color-primary-light);
+}
+
+.proyectos-ddhub {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .img-proyecto {
+    width: 100%;
+    height: 30rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  a {
+    color: var(--color-azul);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

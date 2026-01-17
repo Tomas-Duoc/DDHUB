@@ -1,6 +1,5 @@
 .descripcion-laboratorios {
   padding-top: 5rem;
-  padding-bottom: 5rem;
 
   p {
     width: 75%;
@@ -31,12 +30,22 @@
     flex-direction: column;
     justify-content: center;
 
+    .title{
+      color: var(--color-azul);
+
+      &:hover{
+        text-decoration: underline; 
+      }
+    }
+
     .p-content{
       font-family: var(--fonts-heading);
     }
 
     span {
       font-weight: 800;
+      color: var(--color-azul);
+      text-decoration: underline;
     }
 
     .docentes{
@@ -58,6 +67,7 @@
 
       .docentes-name{
         font-weight: 600;
+        color: var(--color-azul);
       }
     }
 

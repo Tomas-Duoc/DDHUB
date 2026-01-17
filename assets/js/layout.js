@@ -117,3 +117,26 @@ linksHover.forEach((link) => {
     }
   });
 });
+
+//Filtros 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const filtros = document.getElementById("filtros");
+  const btnFiltros = document.getElementById("btn-filtros");
+
+  if (!filtros) return;
+
+  function ajustarFiltros() {
+    const ancho = window.innerWidth;
+    if (ancho < 992) {
+      filtros.classList.add("d-none");
+      btnFiltros.classList.remove("d-none");
+    } else {
+      filtros.classList.remove("d-none");
+      btnFiltros.classList.add("d-none");
+    }
+  }
+
+  ajustarFiltros();
+  window.addEventListener("resize", ajustarFiltros);
+});

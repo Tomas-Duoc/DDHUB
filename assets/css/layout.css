@@ -65,6 +65,7 @@
 
   .item-active {
     background-color: var(--color-principal);
+    color: var(--color-primary-dark) !important;
   }
 }
 
