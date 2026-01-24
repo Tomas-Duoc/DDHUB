@@ -72,14 +72,8 @@ main {
     }
 
     .link-hover {
-      text-decoration: none;
-      color: var(--color-azul);
       font-size: var(--size-h3);
       font-family: var(--fonts-heading);
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
@@ -141,14 +135,8 @@ main {
     }
 
     .link-hover {
-      text-decoration: none;
-      color: var(--color-azul);
       font-size: var(--size-h4);
       font-family: var(--fonts-heading);
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
@@ -185,14 +173,6 @@ main {
     .box-content-home {
       padding: 40px;
 
-      h3{
-        color: var(--color-azul);
-
-        &:hover{
-          text-decoration: underline;
-        }
-      }
-
       @media (width < 992px) {
         padding: 1rem;
       }
@@ -225,17 +205,6 @@ main {
 
     figure {
       margin-bottom: 0;
-
-      figcaption {
-        a {
-          text-decoration: none;
-          color: var(--color-azul);
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
     }
   }
 }

@@ -30,6 +30,10 @@
     flex-direction: column;
     justify-content: center;
 
+    @media (max-width: 768px) {
+      padding-top: 1.5rem;
+    }
+
     .title{
       color: var(--color-azul);
 

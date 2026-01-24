@@ -6,14 +6,45 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       e.stopPropagation();
 
-      const submenu = document.querySelector(".sub-menu");
-      if (submenu.classList.contains("d-none")) {
-        submenu.classList.remove("d-none");
-        submenu.classList.add("d-flex");
-      } else {
-        submenu.classList.remove("d-flex");
-        submenu.classList.add("d-none");
+      let submenu = this.nextElementSibling;
+      if (!submenu || !submenu.classList.contains("sub-menu")) {
+        submenu = this.parentElement.querySelector(".sub-menu");
       }
+      if (!submenu || !submenu.classList.contains("sub-menu")) {
+        const parent = this.closest("li, .menu-item, .nav-item");
+        if (parent) submenu = parent.querySelector(".sub-menu");
+      }
+
+      if (submenu) {
+        const isHidden = submenu.classList.contains("d-none");
+        
+        // // Cerrar otros submenus hermanos
+        // const parentMenu = this.closest('.dropdown-menu');
+        // if (parentMenu) {
+        //   parentMenu.querySelectorAll('.sub-menu').forEach(sm => {
+        //     sm.classList.add('d-none');
+        //     sm.classList.remove('d-flex');
+        //   });
+        // }
+
+        if (isHidden) {
+          submenu.classList.remove("d-none");
+          submenu.classList.add("d-flex");
+        } else {
+          submenu.classList.add("d-none");
+          submenu.classList.remove("d-flex");
+        }
+      }
+    });
+  });
+
+  // Cerrar sub-menus cuando el dropdown principal se oculta (aria-expanded="false")
+  document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+    dropdown.addEventListener('hide.bs.dropdown', function () {
+      this.querySelectorAll('.sub-menu').forEach(function (submenu) {
+        submenu.classList.add('d-none');
+        submenu.classList.remove('d-flex');
+      });
     });
   });
 });
@@ -52,15 +83,15 @@ function NavScrollAndResize() {
       navPrimary.style.backgroundColor = "#000";
       if (logo) {
         logo.classList.add("logo-primary");
-         logo.src = "assets/img/logo-duoc-light.webp"; 
+        logo.classList.remove("logo-black"); // Ensure black class is removed in sticky
         if (logo.parentElement) logo.parentElement.style.margin = "0 0 0 1rem";
       }
     } else {
       navSecondary.style.display = "block";
       navPrimary.style.backgroundColor = "transparent";
       if (logo) {
-        logo.classList.remove("logo-primary");
-        logo.src = "assets/img/logo-duoc-light.webp"; 
+        logo.classList.remove("logo-primary"); 
+        checkLogoBackground(logo); 
         if (logo.parentElement)
           logo.parentElement.style.margin = "0 3.5rem 0 1rem";
       }
@@ -68,7 +99,45 @@ function NavScrollAndResize() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", NavScrollAndResize);
+function checkLogoBackground(logo) {
+  if (!logo) return;
+  
+  const rect = logo.getBoundingClientRect();
+  const x = rect.left + rect.width / 2;
+  const y = rect.top + rect.height / 2;
+  
+  logo.style.visibility = 'hidden';
+  const elements = document.elementsFromPoint(x, y);
+  logo.style.visibility = 'visible';
+
+  for (let el of elements) {
+    if (el.closest('.navbar') || el === logo) continue; 
+    
+    const style = window.getComputedStyle(el);
+    const bgColor = style.backgroundColor;
+    
+    if (bgColor === 'rgba(0, 0, 0, 0)' || bgColor === 'transparent') continue;
+    
+    const rgb = bgColor.match(/\d+/g);
+    if (rgb) {
+      const brightness = Math.round(((parseInt(rgb[0]) * 299) + (parseInt(rgb[1]) * 587) + (parseInt(rgb[2]) * 114)) / 1000);
+      if (brightness > 250) {
+        logo.classList.add('logo-black');
+      } else {
+        logo.classList.remove('logo-black');
+      }
+      return; 
+    }
+  }
+   
+   logo.classList.remove('logo-black');
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    NavScrollAndResize();
+    window.addEventListener('load', NavScrollAndResize); 
+});
 window.addEventListener("resize", NavScrollAndResize);
 window.addEventListener("scroll", NavScrollAndResize);
 // NAV
@@ -119,7 +188,6 @@ linksHover.forEach((link) => {
 });
 
 //Filtros 
-
 document.addEventListener("DOMContentLoaded", function () {
   const filtros = document.getElementById("filtros");
   const btnFiltros = document.getElementById("btn-filtros");

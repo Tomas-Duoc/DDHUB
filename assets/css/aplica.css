@@ -81,8 +81,12 @@
 }
 
 
-.busqueda-proyectos{
+.busqueda-filtros{
   padding-bottom: 5rem;
+
+  select{
+    border: solid 1px var(--color-primary-dark);
+  }
 
   .filtros-btn{
     display: flex;

@@ -116,14 +116,6 @@
     padding: 20px 0;
     gap: 16px;
 
-    .title-card {
-      color: var(--color-azul);
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
     .art-text-small {
       font-size: var(--size-small);
     }
@@ -142,15 +134,86 @@
   }
 }
 
+.title-card {
+  color: var(--color-azul);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus{
+    border: solid 2px var(--color-azul);
+    background-color: var(--color-beige);
+    display: flex;
+  }
+}
+
+/*============ 
+==== Busqueda Filtros =====*/
+.busqueda-filtros{
+  padding-bottom: 5rem;
+
+  select{
+    border: solid 1px var(--color-primary-dark);
+  }
+
+  .filtros-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-primary-dark);
+    padding: 1rem;
+    border: solid 2px var(--color-primary-dark);
+    width: 100%;
+    transition: all ease .3s;
+
+    i{
+      font-size: 1.5rem;
+      font-weight: 700;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .filtros-btn[aria-expanded="true"] {
+    border-bottom: none;
+
+    i{
+      transform: rotate(180deg);
+    }
+  }
+
+  .form-mobile{
+    border-top: none;
+  }
+
+  form{
+    padding: 2rem;
+    border: solid 2px var(--color-primary-dark);
+    position: sticky;
+    top: 5rem;
+
+    label{
+      font-family: var(--fonts-paragraph);
+      margin-bottom: 1rem;
+    }
+
+    .button-ddhub{
+      background: transparent;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
 /*============ 
 ==== CONTACTO =====*/
 .contacto,
-.contacto-lab{
+.contacto-lab {
   padding: 10rem 0;
   background-color: #ebe6d6;
   position: relative;
 
-  .img-contacto{
+  .img-contacto {
     position: absolute;
     top: 0;
     right: 0;
